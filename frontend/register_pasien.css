@@ -1,0 +1,51 @@
+#in_box label {
+    background-color: aqua;
+    z-index: 1;
+    position: relative;
+    font-size: small;
+    left: -120px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#user:hover,
+#password:hover {
+    transform: translateY(5%);
+    border-bottom: 2px solid black;
+}
+
+#user:focus,
+#password:focus {
+    border-bottom: none;
+    border: 2px solid blue;
+    transform: translateY(10%);
+    opacity: 70%;
+    outline: none;
+}
+
+::placeholder {
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#login button {
+    background-color: purple;
+    border-radius: 10px;
+    border: 0px;
+    border-bottom: 3px solid black;
+    width: 90px;
+    box-shadow: 0 0 5px black;
+}
+
+#login:hover button {
+    transform: translateY(10%);
+    border-bottom: 1px solid black;
+    transition: 0.2s;
+}
+
+#login:active button {
+    border-bottom: 0px;
+    background-color: darkorchid;
+}
